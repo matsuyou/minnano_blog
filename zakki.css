@@ -1,0 +1,118 @@
+/*********カテゴリーメニュー************/
+.kizimenu ul{
+   margin: 0;    /* border外側余白  */
+   padding: 0;    /* border内側余白  */
+   list-style: none;  /* 箇条書きの・ */
+   border: solid 5px #696969;
+}
+
+.kizimenu li {
+   float: left;
+   width: 25%;
+   background: #f7f7f7;
+}
+
+.kizimenu li a {    /* リンク */
+   display: block;
+   padding: 5px;
+   font-size: 16px;
+   text-decoration: none;  /* 文字下の線削除 */
+   text-align: center;
+   color: #000000;
+   border: solid 1px #696969;
+}
+
+.kizimenu li a:hover {
+   background-color: #696969;
+   color: #FFF;
+}
+
+.kizimenu ul:after {
+   content: "";      /* コンテンツの挿入 */
+   display: block;  /* 箱 */
+   clear: both;    /* 左寄せ */
+}
+
+
+/*********ページネーション***********/
+.pagenation {
+    overflow: hidden;
+}
+
+.pagenation ul {
+    list-style: none;
+    position: relative;
+    left: 50%;
+    float: left;
+}
+
+.pagenation ul li {
+    margin: 0 1px;
+    position: relative;
+    left: -70%;
+    float: left;
+}
+
+.pagenation ul li a {
+    display: block;
+    font-size: 16px;
+    padding: 0.6em 1em;
+    border-radius: 3px;
+}
+
+.pagenation ul li a {
+    background: #EEE;
+    color: #000;
+    text-decoration: none;
+}
+ 
+.pagenation ul li a:hover {
+    background: #333;
+    color: #FFF;
+} 
+
+
+/*********記事一覧*******************/
+.kizi {
+   border: solid 1px #696969;
+   padding: 8px;
+   margin: 10px;
+   background: #f7f7f7;
+   box-shadow:1px 1px 1px;
+}
+
+.kizi .kizi_category a{
+   text-decoration: none;
+   background: #4169E1;
+   color: #FFF;
+   border: solid 1px #696969;
+   float: left;
+   padding: 2px;
+   border-radius: 3px;
+   font-size: 14px;
+}
+
+.kizi .kizi_date{
+   float: right;
+}
+
+.kizi .kizi_title a{
+   text-decoration: none;
+   font-size: 20px;
+   color: #000000;
+   padding-left: 10px;
+   font-weight: bold; 
+}
+
+.kizi .kizi_blog{
+   color: #696969;
+   text-align:right;
+}
+
+
+
+@media (max-width: 768px){
+.kizimenu li {
+   float: left;
+   width: 50%;
+}
